@@ -39,7 +39,7 @@ python scene.py preview B    # 只出第 0 帧静态图
 
 ## 授权
 
-**代码**（`*.py`）使用 [MIT 协议](LICENSE)。
+**代码**（`*.py`）使用 [MIT 协议](LICENSE)；角色版权说明见 [NOTICE](NOTICE)。
 
 **画面中的角色不适用 MIT 协议**：
 
