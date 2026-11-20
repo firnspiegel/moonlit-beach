@@ -17,7 +17,7 @@ SCALE = 5
 N = 24            # 帧数 (一个海浪周期)
 FRAME_MS = 120
 HORIZON = 138
-SHORE = 212       # 海浪最远退到这里
+SHORE = 268       # 海浪最远退到这里 (两人身后不远)
 
 HERE = Path(__file__).resolve().parent
 TAU = math.tau
@@ -159,7 +159,7 @@ def draw_background(px, f):
                 px[x, y] = GLINT[2] if v > 1.15 and abs(u) < 0.35 else GLINT[1] if v > 0.7 else GLINT[0]
 
     # 一道涌向岸边的浪
-    by = 186 + 26 * (f / N)
+    by = SHORE - 26 + 26 * (f / N)
     fade = math.sin(math.pi * f / N)
     if fade > 0.15:
         for x in range(W):
